@@ -1,0 +1,18 @@
+Solid Principle in python.
+
+Single Responsibility Principles:
+“A class should have only one reason to change” which means every class should have  a single responsibility or single job or single purpose. In other words, a class should have only one job or purpose within the software system.
+
+Open/Closed Principles:
+“Software entities (class,modules,functions,etc) should be open for extension,but closed for modifications” which means you should be able to extend a class behavior without modiffying it.
+
+Liskov’s substitution Principle:
+ “Derived or child classes must be substitutable for their base or parent classes” .This principles ensure that any class that is the child of a parent class should be usable in place of its parent without any unexpected behavior.
+
+Interface Segregation Principle:
+It states that “do not force any client to implement an interface which is irrelevant to them”. The main aim of  these principles is to focus on avoiding fat interfaces and give preferences to many small clients-specific interfaces.  
+
+Dependency Inversion Principle:
+It states that “the high- level modules should not depend on low level modules.Both should depend on abstractions .”Additionally, abstraction should not depend on details.Details should be dependent on abstractions.
+
+
