@@ -1,6 +1,6 @@
 def start_repl():
-    banner = "Welcome to the Python REPL. Type 'exit()' to quit."
-    exit_commands = ('exit()', 'quit()')
+    banner = "Welcome to the Python REPL. Type 'exit()' or 'quit()' to exit."
+    exit_commands = ('exit', 'quit')
     
     print(banner)
     while True:
@@ -10,8 +10,13 @@ def start_repl():
                 print("Exiting REPL. Goodbye!")
                 break
             
-            # Use exec for more complex statements
-            exec(user_input)
+            # Evaluate and execute user input
+            result = eval(user_input)
+            if result is not None:
+                print(result)
+        except KeyboardInterrupt:
+            print("\nExiting REPL. Goodbye!")
+            break
         except Exception as e:
             print(f"Error: {e}")
 
